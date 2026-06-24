@@ -1,0 +1,48 @@
+div {
+    border: 2px solid black;
+    border-radius: 15px;
+  text-align: center;  
+  margin: 500px ;
+  padding: 15px;
+background: rgba(255, 255, 255, 0.35);
+border-radius: 16px;
+border: none;
+      transition-duration: 0.5s;
+
+
+}
+div:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;   
+background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.2px);
+-webkit-backdrop-filter: blur(4.2px);
+border: 1px solid rgba(255, 255, 255, 0.02);
+}
+body {
+background: #cc3ec5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffdde1, #cc3ec5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffdde1, #cc3ec5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button {
+  background: rgb(206, 111, 206);
+    margin: 15px;
+ box-shadow: 0 0.7em 1.5em -0.5em rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+    padding: 10px;
+    border-color: #ffdde1;
+      transition-duration: 0.7s;
+}
+button:hover {
+  
+  background: #f68bf1;
+      border-color: #cc3ec5;
+    border-width: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;   
+
+}
+#exit {
+  cursor:progress;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anita Database</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+<div>
+    <h1>WELCOME TO ANNIE's DATABASE</h1>
+    <p>complete the form</p>
+
+    <form onsubmit="return handleSubmit(event)">
+
+        <label>Name:</label><br>
+        <input type="text" name="firstName" required><br><br>
+
+        <label>Last name:</label><br>
+        <input type="text" name="lastName" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" required><br><br>
+
+        <label>Number:</label><br>
+        <input type="text" name="phone" required><br><br>
+
+        <label>Room:</label><br>
+
+        <input type="radio" id="studio" name="room" value="A" required>
+        <label for="studio">studio</label><br>
+
+        <input type="radio" id="two" name="room" value="B">
+        <label for="two">two rooms</label><br>
+
+        <input type="radio" id="three" name="room" value="C">
+        <label for="three">three rooms</label><br><br>
+
+        <input type="submit" value="Go">
+
+    </form>
+</div>
+
+<script>
+function handleSubmit(event) {
+    event.preventDefault(); // stop normal form submit
+
+    alert("Successfully saved! Wait a minute 😊");
+
+    let room = document.querySelector('input[name="room"]:checked').value;
+
+    if (room === "A") {
+        window.location.href = "index3.html";
+    } 
+    else if (room === "B") {
+        window.location.href = "index1.html";
+    } 
+    else if (room === "C") {
+        window.location.href = "INDEX4.html";
+    }
+
+    return false;
+}
+</script>
+
+</body>
+</html>

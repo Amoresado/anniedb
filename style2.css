@@ -1,0 +1,56 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+body {
+background: #cc3ec5; 
+background: -webkit-linear-gradient(to right, #ffdde1, #cc3ec5);
+background: linear-gradient(to right, #ffdde1, #cc3ec5); 
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;   
+background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.2px);
+-webkit-backdrop-filter: blur(4.2px);
+border: 1px solid rgba(255, 255, 255, 0.02);
+}
+div {
+    border: 2px solid black;
+    border-radius: 15px;
+  text-align: left;  
+ margin: 400px ; 
+ padding: 30px;
+background: rgba(255, 255, 255, 0.35);
+border-radius: 16px;
+border: none;
+      transition-duration: 0.5s;
+display: flex; 
+  flex-wrap: wrap;
+}
+.flex {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 50px;
+}
+
+.card {
+  border: 2px solid rgb(234, 144, 199);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 20px;
+  transition-duration: 0.5s;
+  text-align: left;
+    gap: 10px; 
+}
+.card button {
+  margin: 50px; 
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+    width: fit-content;}
